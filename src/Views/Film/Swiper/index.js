@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Carousel } from 'antd';
 import Axios from 'axios';
 import style from './index.module.scss'
-
+import 'antd/dist/antd.css';
 
 export default class Swiper extends Component {
 
@@ -28,6 +28,7 @@ export default class Swiper extends Component {
           this.setState({
             kvBanner: res.data.data[0].list
           })
+          console.log(this.state.kvBanner)
         })
       }
 }
